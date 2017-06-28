@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.AdminControllerFx">
+   <children>
+      <TableView fx:id="userTableView" layoutX="21.0" layoutY="14.0" prefHeight="200.0" prefWidth="360.0">
+        <columns>
+          <TableColumn fx:id="userIdTc" prefWidth="75.0" text="UserId" />
+          <TableColumn fx:id="usernameTc" prefWidth="75.0" text="Username" />
+            <TableColumn fx:id="passwordTc" prefWidth="75.0" text="Password" />
+            <TableColumn fx:id="roleIdTc" prefWidth="75.0" text="RoleId" />
+        </columns>
+      </TableView>
+      <Button fx:id="addUser" layoutX="119.0" layoutY="239.0" mnemonicParsing="false" onAction="#setAddUserButton" text="Add" />
+      <Button fx:id="updateUser" layoutX="119.0" layoutY="275.0" mnemonicParsing="false" onAction="#setUpdateUserButton" text="Update" />
+      <Button fx:id="deleteUser" layoutX="119.0" layoutY="315.0" mnemonicParsing="false" onAction="#setDeleteUserButton" text="Delete" />
+      <Button fx:id="viewUser" layoutX="121.0" layoutY="350.0" mnemonicParsing="false" onAction="#setViewUserButton" text="View" />
+      <TextField fx:id="userIdTf" layoutX="232.0" layoutY="233.0" promptText="userid" />
+      <TextField fx:id="usernameTf" layoutX="232.0" layoutY="275.0" promptText="username" />
+      <TextField fx:id="passwordTf" layoutX="232.0" layoutY="315.0" promptText="password" />
+      <TextField fx:id="roleIdTf" layoutX="232.0" layoutY="350.0" promptText="roleId" />
+   </children>
+</AnchorPane>
